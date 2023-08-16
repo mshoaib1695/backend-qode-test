@@ -1,0 +1,39 @@
+{
+  "name": "backend-qode-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --trace-warnings server.js",
+    "dev": "nodemon --trace-warnings server.js",
+    "test": "./node_modules/.bin/eslint .",
+    "prepare": "husky install",
+    "prettier:check": "prettier --check .",
+    "prettier:write": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "elliptic": "^6.5.4",
+    "express": "^4.18.2",
+    "log4js": "^6.7.1",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^2.0.20",
+    "pg": "^8.8.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.25.3",
+    "sequelize-cli": "^6.5.2",
+    "sha3": "^2.1.4"
+  },
+  "devDependencies": {
+    "babel-register": "^6.26.0",
+    "eslint": "^8.31.0",
+    "husky": "^8.0.0",
+    "prettier": "^2.8.1"
+  }
+}
